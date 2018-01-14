@@ -1,0 +1,17 @@
+.site-header {
+  background-color: $bg-red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $text-light;
+
+
+  @include media(">320px") {
+    background-color: $bg-yellow;
+  }
+  @include media(">768px") {
+    background-color: $bg-green;
+  }
+  @include media(">1024px") {
+    background-color: $bg-blue;
+  }
+}
