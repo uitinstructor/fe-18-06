@@ -3,15 +3,54 @@
   padding-top: 20px;
   padding-bottom: 20px;
   color: $text-light;
+  border: 1px solid #000;
 
 
   @include media(">320px") {
-    background-color: $bg-yellow;
+    // background-color: $bg-yellow;
   }
   @include media(">768px") {
-    background-color: $bg-green;
+    // background-color: $bg-green;
   }
   @include media(">1024px") {
-    background-color: $bg-blue;
+    // background-color: $bg-blue;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .navigation-is-fixed & {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.header-nav {
+  position: absolute;
+  top: 100%;
+  font-size: 13px;
+  background-color: #ddd;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  list-style-type: none;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s;
+
+  &--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
 }

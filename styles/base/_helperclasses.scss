@@ -3,3 +3,28 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: green;
+  font-size: 10px;
+  visibility: hidden;
+  // display: none;
+  opacity: 0;
+  transition: .7s;
+
+
+  &--is-visible {
+    // display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+ .navigation-is-fixed {
+    padding-top: 109px;
+ }
